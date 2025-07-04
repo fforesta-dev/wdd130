@@ -1,9 +1,9 @@
 :root {
-    --main-crimson: #dc143c;
+    --main-crimson: #DC143C;
     --main-white: white;
     --main-padding: 20px;
     --main-border: 1px solid black;
-    --box-bg: #ffe4e1;
+    --box-bg: #FFE4E1;
     --box-border: 1px solid rgb(0 0 0 / 10%);
     --box-padding: 1rem;
     --box-text: #000;
@@ -80,6 +80,7 @@ aside.box {
     color: var(--box-text);
     max-width: 500px;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -90,7 +91,9 @@ aside img {
 
 aside h2 {
     margin-bottom: 10px;
-    position: static;
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
 
 footer {
