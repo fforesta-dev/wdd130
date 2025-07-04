@@ -1,13 +1,27 @@
 :root {
-    --main-blue: darkblue;
+    --main-crimson: #dc143c;
     --main-white: white;
     --main-padding: 20px;
     --main-border: 1px solid black;
+    --box-bg: #ffe4e1;
+    --box-border: 1px solid rgb(0 0 0 / 10%);
+    --box-padding: 1rem;
+    --box-text: #000;
 }
 
-/* Use the variables where the values repeat */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
 nav {
-    background-color: var(--main-blue);
+    background-color: var(--main-crimson);
     padding: 10px;
 }
 
@@ -15,10 +29,21 @@ nav a {
     color: var(--main-white);
     display: block;
     padding: var(--main-padding);
+    text-decoration: underline;
+}
+
+main {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 24px 16px 0 16px;
+    background: #fff;
+    min-height: 200px;
 }
 
 h1 {
-    color: var(--main-blue);
+    color: var(--main-crimson);
+    margin-bottom: 1rem;
+    margin-left: 12px;
 }
 
 main img {
@@ -27,33 +52,53 @@ main img {
     border: var(--main-border);
     padding: var(--main-padding);
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 p {
-    padding: 0;
+    margin: 1rem 0 1rem 12px;
 }
 
-main {
-    max-width: 840px;
+/* Class Selectors */
+.box {
+    margin: 1rem 0 1rem 12px;
+    border: var(--box-border);
+    padding: var(--box-padding);
+    background-color: var(--box-bg);
+    color: var(--box-text);
+    clear: right;
+    position: relative;
 }
 
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+aside.box {
+    margin: 2rem auto;
+    border: var(--box-border);
+    padding: var(--box-padding);
+    background-color: var(--box-bg);
+    color: var(--box-text);
+    max-width: 500px;
     text-align: center;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    margin-bottom: 10px;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+    position: static;
 }
 
 footer {
-    margin-top: 15px;
+    margin-top: 24px;
     border-top: 1px solid #000;
     text-align: center;
+    padding: 10px 0;
+    font-size: 0.95em;
+    color: #333;
+    background: #fff;
 }
