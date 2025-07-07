@@ -19,13 +19,10 @@ body {
     color: var(--primary-color);
 }
 
-/* === HEADER: Logo and vertical nav === */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
     background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
     border-bottom: 2px solid #ccc;
 }
 
@@ -36,38 +33,44 @@ header {
 
 nav {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
 }
 
 nav a {
-    color: var(--primary-color);
+    background-color: var(--accent1-color);
+    padding: 10px 16px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--accent2-color);
+    background-color: var(--accent2-color);
 }
 
-/* === BANNER === */
-#banner-box {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding: 30px;
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
     background-color: var(--secondary-color);
+    padding: 20px 0;
+}
+
+.carousel {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
 }
 
 .banner {
+    width: 100%;
+    padding: 0 40px;
+    text-align: center;
     flex: 0 0 100%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    scroll-snap-align: start;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .banner img {
@@ -81,30 +84,51 @@ nav a:hover {
     font-family: var(--heading-font);
     font-size: 1.5rem;
     color: var(--accent1-color);
-    margin-bottom: 5px;
 }
 
 .banner p {
     font-size: 0.95rem;
 }
 
-/* === PRODUCT GALLERY === */
+@keyframes slide {
+
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+
+    25%,
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50%,
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75%,
+    100% {
+        transform: translateX(0);
+    }
+}
+
 #product-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 30px;
+    padding: 40px;
     background-color: #fff;
 }
 
 .product {
+    position: relative;
     background-color: #f1f1f1;
     padding: 10px;
     border-radius: 8px;
     text-align: center;
-    transition: transform 0.3s ease;
-    position: relative;
     overflow: hidden;
+    transition: border 0.3s ease;
 }
 
 .product img {
@@ -113,49 +137,93 @@ nav a:hover {
     transition: transform 0.3s ease;
 }
 
-.product h2 {
-    font-family: var(--heading-font);
-    font-size: 1.2rem;
-    color: var(--accent1-color);
-    margin-top: 10px;
+.product::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
 }
 
-.product p {
-    font-size: 0.9rem;
-}
-
-.product:hover img {
-    transform: scale(1.05);
+.product:hover::before {
+    opacity: 1;
 }
 
 .product:hover {
     border: 2px solid var(--accent2-color);
 }
 
-/* === FOOTER === */
+.product h2 {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    color: var(--accent1-color);
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.product p {
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 2;
+}
+
 footer {
-    background-color: #eaeaea;
-    padding: 30px;
+    background-color: #1B4965;
+    color: white;
+    padding: 40px 30px;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .footer-section {
-    flex: 1 1 30%;
+    flex: 1 1 200px;
+}
+
+.footer-section h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .footer-section a {
-    color: var(--primary-color);
-    text-decoration: none;
-    margin-right: 10px;
     display: inline-block;
+    margin: 5px 10px 5px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
 
 .footer-section a:hover {
     text-decoration: underline;
+}
+
+.footer-section.social-icons h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section.social-icons a {
+    font-size: 0;
+}
+
+.footer-section.social-icons a img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.footer-section.social-icons a:hover {
+    text-decoration: none;
 }
