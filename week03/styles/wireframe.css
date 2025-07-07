@@ -227,3 +227,71 @@ footer {
 .footer-section.social-icons a:hover {
     text-decoration: none;
 }
+
+.carousel-wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 300%;
+    transition: transform 0.4s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#carousel-1:checked~.carousel {
+    transform: translateX(0%);
+}
+
+#carousel-2:checked~.carousel {
+    transform: translateX(-100%);
+}
+
+#carousel-3:checked~.carousel {
+    transform: translateX(-200%);
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    pointer-events: none;
+}
+
+.carousel-nav label {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    pointer-events: all;
+}
+
+.carousel-nav label:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

@@ -25,8 +25,12 @@
 
     <main>
         <div class="carousel-wrapper">
+            <input type="radio" name="carousel" id="carousel-1" checked>
+            <input type="radio" name="carousel" id="carousel-2">
+            <input type="radio" name="carousel" id="carousel-3">
+
             <div class="carousel">
-                <section class="banner">
+                <section class="slide">
                     <img src="https://picsum.photos/1024/576" alt="banner image description">
                     <h2>Banner 1 Title</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic perspiciatis ad ab quas dolores
@@ -34,7 +38,8 @@
                         at sapiente quos qui magni magnam quae praesentium tempore ipsum nobis voluptatibus repudiandae
                         pariatur nemo aliquam debitis error quis dolor culpa. Molestiae, similique expedita?</p>
                 </section>
-                <section class="banner">
+
+                <section class="slide">
                     <img src="https://picsum.photos/1024/576" alt="banner image description">
                     <h2>Banner 2 Title</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus modi, quae dolor quibusdam
@@ -42,15 +47,26 @@
                         repellendus expedita ut officia enim fuga cupiditate quod accusamus quis totam quisquam. Minima
                         adipisci mollitia error, ea atque ipsam, quas rem odio excepturi iste accusantium!</p>
                 </section>
-                <section class="banner">
+
+                <section class="slide">
                     <img src="https://picsum.photos/1024/576" alt="banner image description">
                     <h2>Banner 3 Title</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor obcaecati vero ab
-                        impedit repellendus distinctio quod neque veniam, molestiae dolorem, soluta dolores sequi
-                        exercitationem sunt totam facilis aliquam voluptatibus, facere nisi? Quia, assumenda error
-                        deserunt non impedit blanditiis quidem tenetur adipisci optio voluptate hic eaque quod repellat
-                        aut quam.</p>
+                        impedit
+                        repellendus distinctio quod neque veniam, molestiae dolorem, soluta dolores sequi exercitationem
+                        sunt totam facilis aliquam voluptatibus, facere nisi? Quia, assumenda error deserunt non impedit
+                        blanditiis quidem tenetur adipisci optio voluptate hic eaque quod repellat aut quam.</p>
                 </section>
+            </div>
+
+            <div class="carousel-nav">
+                <label for="carousel-3">&#10094;</label>
+                <label for="carousel-1">&#10094;</label>
+                <label for="carousel-2">&#10094;</label>
+
+                <label for="carousel-2">&#10095;</label>
+                <label for="carousel-3">&#10095;</label>
+                <label for="carousel-1">&#10095;</label>
             </div>
         </div>
 
