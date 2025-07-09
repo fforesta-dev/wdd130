@@ -24,10 +24,10 @@
     </header>
 
     <main>
-        <div class="carousel-wrapper">
-            <input type="radio" name="carousel" id="carousel-1" checked>
-            <input type="radio" name="carousel" id="carousel-2">
-            <input type="radio" name="carousel" id="carousel-3">
+        <div class="carousel-wrapper" style="height: auto;">
+            <span id="target-item-1"></span>
+            <span id="target-item-2"></span>
+            <span id="target-item-3"></span>
 
             <div class="carousel">
                 <section class="slide">
@@ -51,16 +51,39 @@
                         impedit repellendus distinctio...</p>
                 </section>
             </div>
+          
+            <section class="carousel-item item-1">
+                <img src="https://picsum.photos/1024/576" alt="banner image description">
+                <h2>Banner 1 Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic perspiciatis ad ab quas dolores
+                    deserunt ullam laboriosam, veritatis neque fuga autem repellat! Odio fuga voluptas reiciendis, at
+                    sapiente quos qui magni magnam quae praesentium tempore ipsum nobis voluptatibus repudiandae
+                    pariatur nemo aliquam debitis error quis dolor culpa. Molestiae, similique expedita?</p>
+                <a class="arrow arrow-prev" href="#target-item-3"></a>
+                <a class="arrow arrow-next" href="#target-item-2"></a>
+            </section>
 
-            <div class="carousel-nav">
-                <label for="carousel-3">&#10094;</label>
-                <label for="carousel-1">&#10094;</label>
-                <label for="carousel-2">&#10094;</label>
+            <section class="carousel-item item-2">
+                <img src="https://picsum.photos/1024/576" alt="banner image description">
+                <h2>Banner 2 Title</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus modi, quae dolor quibusdam
+                    reprehenderit dignissimos distinctio, porro iusto amet, quidem dolorum ab. Dolor alias, vel
+                    repellendus expedita ut officia enim fuga cupiditate quod accusamus quis totam quisquam. Minima
+                    adipisci mollitia error, ea atque ipsam, quas rem odio excepturi iste accusantium!</p>
+                <a class="arrow arrow-prev" href="#target-item-1"></a>
+                <a class="arrow arrow-next" href="#target-item-3"></a>
+            </section>
 
-                <label for="carousel-2">&#10095;</label>
-                <label for="carousel-3">&#10095;</label>
-                <label for="carousel-1">&#10095;</label>
-            </div>
+            <section class="carousel-item item-3">
+                <img src="https://picsum.photos/1024/576" alt="banner image description">
+                <h2>Banner 3 Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor obcaecati vero ab impedit
+                    repellendus distinctio quod neque veniam, molestiae dolorem, soluta dolores sequi exercitationem
+                    sunt totam facilis aliquam voluptatibus, facere nisi? Quia, assumenda error deserunt non impedit
+                    blanditiis quidem tenetur adipisci optio voluptate hic eaque quod repellat aut quam.</p>
+                <a class="arrow arrow-prev" href="#target-item-2"></a>
+                <a class="arrow arrow-next" href="#target-item-1"></a>
+            </section>
         </div>
 
         <div id="product-gallery">
