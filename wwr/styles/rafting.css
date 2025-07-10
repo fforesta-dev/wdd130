@@ -45,7 +45,7 @@ nav {
     padding-bottom: 8px;
     gap: 16px;
     width: 840px;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 10px;
 }
 
 main {
@@ -93,6 +93,10 @@ h1 {
     padding: 20px 18px;
 }
 
+.socialmedia img {
+    display: block;
+}
+
 .hero article img {
     float: right;
     width: 125px;
@@ -128,8 +132,4 @@ section h2 {
 
 .socialmedia a {
     text-decoration: none;
-}
-
-.socialmedia img {
-    display: block;
 }
