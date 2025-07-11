@@ -51,7 +51,7 @@ nav {
 }
 
 nav a {
-    color: var(--main-white);
+    color: var(--main-white) !important;
     display: block;
     padding: var(--main-padding);
     text-decoration: none;
@@ -62,6 +62,11 @@ nav a {
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 0.25rem;
+    color: var(--main-white) !important;
+}
+
+nav a:visited {
+    color: var(--main-white) !important;
 }
 
 a {
