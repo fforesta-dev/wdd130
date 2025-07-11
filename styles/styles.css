@@ -95,17 +95,13 @@ main p {
 
 main img {
     width: 9.375rem;
-    /* 150px */
     height: auto;
     border: var(--main-border);
     padding: var(--main-padding);
     box-shadow: 0 0 1.875rem gray;
-    /* 30px */
     float: right;
     margin-left: 1.25rem;
-    /* 20px */
     margin-bottom: 0.625rem;
-    /* 10px */
 }
 
 h1 {
@@ -113,9 +109,7 @@ h1 {
     margin-bottom: var(--spacing-base);
     margin-left: 0.75rem;
     border-bottom: 0.125rem solid var(--main-crimson);
-    /* 2px */
     padding-bottom: 0.25rem;
-    /* 4px */
 }
 
 p {
@@ -138,7 +132,6 @@ aside p {
 
 aside img {
     width: 12.5rem;
-    /* 200px */
     height: auto;
     margin-bottom: 0.625rem;
     margin-top: 1.875rem;
@@ -156,7 +149,6 @@ aside h2 {
 
 footer {
     margin-top: 1.5rem;
-    /* 24px */
     border-top: var(--main-border);
     text-align: center;
     padding: 0.625rem 0;
@@ -188,7 +180,6 @@ aside.box {
     background-color: var(--box-bg);
     color: var(--box-text);
     max-width: 31.25rem;
-    /* 500px */
     text-align: center;
 }
 
