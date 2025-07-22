@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | Whisper River Rafting</title>
+    <meta name="description"
+        content="Get in touch with Whispering River Rafting. Contact us for questions, reservations, or suggestions. We're here to help you plan your next adventure.">
+    <meta name="author" content="Francesco Foresta">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Source+Sans+3:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo-whisper.webp" alt="Whispering River Rafting Logo" class="logo"></a>
+        <nav>
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Reach out using the information below or send us a message through the form.
+            </p>
+            <ul>
+                <li><strong>Address:</strong> 123 River Run Road, Keystone, CO 80435</li>
+                <li><strong>Phone:</strong> (555) 123-4567</li>
+                <li><strong>Email:</strong> info@whisper-river-rafting.com</li>
+            </ul>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6147.857721182753!2d-105.94223800603969!3d39.606284971207934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876a5734f1d16e1d%3A0xcdb1f6983bdfde7e!2s123%20River%20Run%20Rd%2C%20Keystone%2C%20CO%2080435%2C%20USA!5e0!3m2!1sen!2sit!4v1753197252126!5m2!1sen!2sit"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/jane-doe.webp" alt="Smiling rafting guide Jane">
+                    <figcaption>Jane Doe - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/alexa-rivera.webp" alt="Smiling support staff Alex">
+                    <figcaption>Alexa Rivera - Customer Support</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/sam-kim.webp" alt="Smiling trip planner Sam">
+                    <figcaption>Sam Kim - Trip Planner</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of your message:</legend>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Whispering River Rafting - Designed by Francesco Foresta</p>
+        <div class="footer-social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.webp" alt="Link to our Facebook page">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.webp" alt="Link to our Instagram profile">
+            </a>
+            <a href="https://x.com/" target="_blank">
+                <img src="images/x-twitter.webp" alt="Link to our X page">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
