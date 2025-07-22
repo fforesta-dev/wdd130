@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+:root {
+    --main-crimson: #DC143C;
+    --main-white: white;
+    --box-bg: #f8d7da;
+    --box-text: #2a0004;
+    --box-border: 0.0625rem solid var(--main-crimson);
+    --main-border: 0.0625rem solid black;
+    --radius: 0.75rem;
+    --shadow: 0 0.375rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-white);
+    color: var(--box-text);
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    color: var(--main-crimson);
+    border-bottom: 2px solid var(--main-crimson);
+    padding-bottom: 0.5rem;
+}
+
+form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(220, 20, 60, 0.4);
+    box-shadow: 0 0.375rem 1rem rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 2rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.fieldset-wrapper {
+    background-color: #f8d7da;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(220, 20, 60, 0.3);
+    display: grid;
+    gap: 1.25rem;
+}
+
+legend {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #dc143c;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid #dc143c;
+    margin-bottom: 0.5rem;
+}
+
+.form-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+label {
+    font-weight: 700;
+    color: #2a0004;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.2s ease-in-out;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #dc143c;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(220, 20, 60, 0.2);
+}
+
+button {
+    background-color: #dc143c;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 1rem auto 0;
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #b01235;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #444;
+    padding-top: 1rem;
+    border-top: 0.125rem solid var(--main-crimson);
+    background: var(--main-white);
+}
