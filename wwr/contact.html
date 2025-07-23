@@ -16,9 +16,11 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="contact-page">
     <header>
-        <a href="index.html"><img src="images/logo-whisper.webp" alt="Whispering River Rafting Logo" class="logo"></a>
+        <a href="index.html">
+            <img src="images/logo-whisper.webp" alt="Whispering River Rafting Logo" class="logo">
+        </a>
         <nav>
             <div class="nav-menu">
                 <a href="index.html">Home</a>
@@ -29,21 +31,35 @@
         </nav>
     </header>
     <main>
+        <section class="contact-banner">
+            <div class="rectangle-3">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you! Reach out using the information below or send us a message through the
+                    form.</p>
+            </div>
+        </section>
         <section class="contact-info">
             <div class="container">
-                <div class="contact-intro-box">
-                    <h1>Contact Us</h1>
-                    <p>We'd love to hear from you! Reach out using the information below or send us a message through
-                        the form.</p>
-                </div>
-
                 <div class="contact-grid">
                     <div class="headquarters">
-                        <h2>Headquarters</h2>
-                        <p><strong>Colorado, United States</strong></p>
-                        <p>123 River Run Road, Keystone</p>
-                        <p><a href="mailto:info@whisper-river-rafting.com">info@whisper-river-rafting.com</a></p>
-                        <p>+1 (555) 123-4567</p>
+                        <div class="hq-header">
+                            <h2>Headquarters</h2>
+                            <p>
+                                <strong>Colorado, United States</strong>
+                            </p>
+                            <div class="contact-line">
+                                <img src="images/location.webp" alt="Location icon">
+                                <span>123 River Run Road, <br>Keystone </span>
+                            </div>
+                            <div class="contact-line">
+                                <img src="images/mail.webp" alt="Mail icon">
+                                <a href="mailto:info@whisper-river-rafting.com">info@whisper-river-rafting.com</a>
+                            </div>
+                            <div class="contact-line">
+                                <img src="images/phone.webp" alt="Phone icon">
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="map-container">
                         <iframe
@@ -54,59 +70,66 @@
                 </div>
             </div>
         </section>
-
         <section class="employees">
             <h2>Meet Our Team</h2>
             <div class="employee-gallery">
                 <figure>
                     <img src="images/jane-doe.webp" alt="Smiling rafting guide Jane">
                     <figcaption>
-                        <span class="name">Jane Doe</span><br>
+                        <span class="name">Jane Doe</span>
+                        <br>
                         <span class="role">Lead Guide</span>
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="images/alexa-rivera.webp" alt="Smiling support staff Alex">
                     <figcaption>
-                        <span class="name">Alexa Rivera</span><br>
+                        <span class="name">Alexa Rivera</span>
+                        <br>
                         <span class="role">Customer Support</span>
                     </figcaption>
                 </figure>
                 <figure>
                     <img src="images/sam-kim.webp" alt="Smiling trip planner Sam">
                     <figcaption>
-                        <span class="name">Sam Kim</span><br>
+                        <span class="name">Sam Kim</span>
+                        <br>
                         <span class="role">Trip Planner</span>
                     </figcaption>
                 </figure>
             </div>
         </section>
-
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <fieldset>
-                    <legend>Purpose of your message:</legend>
-                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+        <section class="form-section">
+            <h2 class="form-title">Send Us a Message</h2>
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="Your email address">
+                    </div>
+                </div>
+                <fieldset class="form-group full-width">
+                    <legend>Purpose of your message</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="general"> General Inquiry </label>
+                    <label>
+                        <input type="radio" name="purpose" value="reservation"> Reservation Question </label>
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion"> Website Suggestion </label>
                 </fieldset>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <label>
-                    <input type="checkbox" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
-
-                <button type="submit">Send Message</button>
+                <div class="form-group full-width">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-textarea"></textarea>
+                </div>
+                <div class="form-footer">
+                    <label class="newsletter">
+                        <input type="checkbox"> Please subscribe me to the monthly newsletter </label>
+                    <button type="submit" class="form-button">SEND MESSAGE</button>
+                </div>
             </form>
         </section>
     </main>
@@ -123,6 +146,10 @@
                 <img src="images/x-twitter.webp" alt="Link to our X page">
             </a>
         </div>
+        <p>
+            <a href="https://app.moqups.com/SN4LgYPs3BKwPJhLs1Pbnr4X7lWcYpgi/view/page/ad12de680?ui=0" target="_blank"
+                rel="noopener noreferrer"> Wireframe </a>
+        </p>
     </footer>
 </body>
 

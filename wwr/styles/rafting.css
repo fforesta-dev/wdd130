@@ -59,7 +59,7 @@ nav {
 
 .nav-menu {
     display: flex;
-    box-shadow: 0 2px 8px rgba(27, 53, 65, 0.10);
+    box-shadow: 0 2px 8px rgba(27, 53, 65, 0.1);
     border-radius: 7px;
 }
 
@@ -72,13 +72,10 @@ nav {
     padding: 1rem 2.5rem;
     border: 1px solid #888;
     border-right: none;
-    border-radius: 0;
-    text-align: center;
     width: 190px;
     min-width: 120px;
     max-width: 190px;
     transition: background 0.3s, color 0.3s;
-    display: inline-block;
 }
 
 .nav-menu a:last-child {
@@ -136,7 +133,7 @@ p {
     padding: 18px 0;
     margin: 0;
     z-index: 2;
-    box-shadow: 0 2px 8px rgba(27, 53, 65, 0.10);
+    box-shadow: 0 2px 8px rgba(27, 53, 65, 0.1);
     letter-spacing: 1px;
 }
 
@@ -181,6 +178,7 @@ p {
     line-height: 1;
 }
 
+.employees,
 .history {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
@@ -215,7 +213,7 @@ p {
     object-fit: cover;
     border-radius: 8px;
     background: var(--accent1-color);
-    box-shadow: 0 1px 6px rgba(27, 73, 101, 0.10);
+    box-shadow: 0 1px 6px rgba(27, 73, 101, 0.1);
     margin: 0 auto;
 }
 
@@ -302,44 +300,9 @@ footer p {
     background-color: #fff;
 }
 
-.contact-intro {
-    background-color: #f1f5f9;
-    text-align: center;
-    padding: 3rem 1rem 2rem;
-}
-
-.contact-intro h1 {
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    font-family: var(--heading-font);
-}
-
-.contact-intro p {
-    color: #444;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
 .container {
     max-width: 1100px;
     margin: 0 auto;
-}
-
-.contact-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.contact-intro-box {
-    background-color: #f1f5f9;
-    text-align: center;
-    padding: 3rem 1rem 2rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
 }
 
 .headquarters {
@@ -349,6 +312,8 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-left: 5px solid var(--accent2-color);
+    padding-left: 1.5rem;
 }
 
 .map-container {
@@ -365,29 +330,19 @@ footer p {
     border-radius: 8px;
 }
 
-.contact-grid {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.employees {
-    background-color: #fff;
-    padding: 3rem 1rem;
-    text-align: center;
-}
-
 .employees h2 {
-    font-size: 2rem;
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    margin-bottom: 2rem;
+    grid-column: 1/4;
+    text-align: center;
+    padding-bottom: 1rem;
 }
 
 .employee-gallery {
+    grid-column: 1/4;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
 .employee-gallery figure {
@@ -439,4 +394,207 @@ footer p {
 .employee-gallery figure:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease;
+}
+
+.rectangle-3 {
+    background-color: #edf0f4;
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    width: 100%;
+}
+
+.contact-grid {
+    display: flex;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.headquarters h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.headquarters p strong {
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.contact-line {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.contact-line img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.contact-line a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-line a:hover {
+    text-decoration: underline;
+}
+
+.hq-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.hq-header h2,
+.hq-header p {
+    margin: 0;
+    padding: 0;
+}
+
+.form-section {
+    max-width: 840px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #edf0f4;
+    border-radius: 3px;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: 0 2px 8px rgba(32, 83, 117, 0.3);
+}
+
+.form-title {
+    text-align: center;
+    color: #3b4754;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #3b4754;
+    margin-bottom: 0.3rem;
+}
+
+.form-input {
+    height: 28px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border: 2px solid #c9d3dd;
+    border-radius: 4px;
+    color: #3b4754;
+    background: #ffffff;
+}
+
+.form-group.full-width {
+    width: 100%;
+}
+
+.form-textarea {
+    height: 99px;
+    padding: 6px 8px;
+    font-size: 12px;
+    border: 2px solid #c9d3dd;
+    border-radius: 4px;
+    resize: vertical;
+    color: #3b4754;
+    background: #ffffff;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+fieldset legend {
+    font-size: 11px;
+    font-weight: 700;
+    color: #3b4754;
+    margin-bottom: 0.5rem;
+}
+
+fieldset label {
+    font-size: 11px;
+    color: #232323;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.newsletter {
+    font-size: 11px;
+    color: #232323;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-button {
+    background: #29323d;
+    color: #ffffff;
+    padding: 5px 20px;
+    border: 1px solid #29323d;
+    border-radius: 2px;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background: #3b4754;
+}
+
+.contact-page footer a {
+    color: #000;
+    font-weight: 500;
+}
+
+.contact-page footer a:hover {
+    text-decoration: underline;
 }
