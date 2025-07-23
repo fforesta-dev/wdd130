@@ -64,6 +64,9 @@ nav {
 }
 
 .nav-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #fff;
     color: var(--primary-color);
     font-family: var(--heading-font);
