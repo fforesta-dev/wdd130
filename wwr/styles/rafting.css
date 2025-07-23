@@ -59,7 +59,7 @@ nav {
 
 .nav-menu {
     display: flex;
-    box-shadow: 0 2px 8px rgba(27, 53, 65, 0.10);
+    box-shadow: 0 2px 8px rgba(27, 53, 65, 0.1);
     border-radius: 7px;
 }
 
@@ -133,7 +133,7 @@ p {
     padding: 18px 0;
     margin: 0;
     z-index: 2;
-    box-shadow: 0 2px 8px rgba(27, 53, 65, 0.10);
+    box-shadow: 0 2px 8px rgba(27, 53, 65, 0.1);
     letter-spacing: 1px;
 }
 
@@ -213,7 +213,7 @@ p {
     object-fit: cover;
     border-radius: 8px;
     background: var(--accent1-color);
-    box-shadow: 0 1px 6px rgba(27, 73, 101, 0.10);
+    box-shadow: 0 1px 6px rgba(27, 73, 101, 0.1);
     margin: 0 auto;
 }
 
@@ -397,7 +397,7 @@ footer p {
 }
 
 .rectangle-3 {
-    background-color: #EDF0F4;
+    background-color: #edf0f4;
     text-align: center;
     padding: 3rem 1rem 2rem;
     width: 100%;
@@ -471,7 +471,7 @@ footer p {
     max-width: 840px;
     margin: 2rem auto;
     padding: 2rem;
-    background: #EDF0F4;
+    background: #edf0f4;
     border-radius: 3px;
     font-family: "Open Sans", sans-serif;
     box-shadow: 0 2px 8px rgba(32, 83, 117, 0.3);
@@ -479,7 +479,7 @@ footer p {
 
 .form-title {
     text-align: center;
-    color: #3B4754;
+    color: #3b4754;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 1.5rem;
@@ -506,7 +506,7 @@ footer p {
 .form-group label {
     font-size: 11px;
     font-weight: 700;
-    color: #3B4754;
+    color: #3b4754;
     margin-bottom: 0.3rem;
 }
 
@@ -514,10 +514,10 @@ footer p {
     height: 28px;
     padding: 4px 8px;
     font-size: 12px;
-    border: 2px solid #C9D3DD;
+    border: 2px solid #c9d3dd;
     border-radius: 4px;
-    color: #3B4754;
-    background: #FFFFFF;
+    color: #3b4754;
+    background: #ffffff;
 }
 
 .form-group.full-width {
@@ -528,11 +528,11 @@ footer p {
     height: 99px;
     padding: 6px 8px;
     font-size: 12px;
-    border: 2px solid #C9D3DD;
+    border: 2px solid #c9d3dd;
     border-radius: 4px;
     resize: vertical;
-    color: #3B4754;
-    background: #FFFFFF;
+    color: #3b4754;
+    background: #ffffff;
 }
 
 fieldset {
@@ -547,7 +547,7 @@ fieldset {
 fieldset legend {
     font-size: 11px;
     font-weight: 700;
-    color: #3B4754;
+    color: #3b4754;
     margin-bottom: 0.5rem;
 }
 
@@ -576,10 +576,10 @@ fieldset label {
 }
 
 .form-button {
-    background: #29323D;
-    color: #FFFFFF;
+    background: #29323d;
+    color: #ffffff;
     padding: 5px 20px;
-    border: 1px solid #29323D;
+    border: 1px solid #29323d;
     border-radius: 2px;
     font-size: 10px;
     font-weight: 700;
@@ -587,7 +587,7 @@ fieldset label {
 }
 
 .form-button:hover {
-    background: #3B4754;
+    background: #3b4754;
 }
 
 .contact-page footer a {
