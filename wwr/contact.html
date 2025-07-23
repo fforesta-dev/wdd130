@@ -64,7 +64,7 @@
                     <div class="map-container">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3072.1943476039577!2d-105.95613968437605!3d39.605088111803566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876a50aa4d17a0f7%3A0x3d13a52a1e77b1b2!2s123%20River%20Run%20Rd%2C%20Keystone%2C%20CO%2080435%2C%20USA!5e0!3m2!1sen!2sus!4v1623424102312!5m2!1sen!2sus"
-                            height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            height="300" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -115,19 +115,25 @@
                 <fieldset class="form-group full-width">
                     <legend>Purpose of your message</legend>
                     <label>
-                        <input type="radio" name="purpose" value="general"> General Inquiry </label>
+                        <input type="radio" name="purpose" id="purpose-general" value="general"> General Inquiry
+                    </label>
                     <label>
-                        <input type="radio" name="purpose" value="reservation"> Reservation Question </label>
+                        <input type="radio" name="purpose" id="purpose-reservation" value="reservation"> Reservation
+                        Question
+                    </label>
                     <label>
-                        <input type="radio" name="purpose" value="suggestion"> Website Suggestion </label>
+                        <input type="radio" name="purpose" id="purpose-suggestion" value="suggestion"> Website
+                        Suggestion
+                    </label>
                 </fieldset>
                 <div class="form-group full-width">
                     <label for="message">Message</label>
                     <textarea id="message" class="form-textarea"></textarea>
                 </div>
                 <div class="form-footer">
-                    <label class="newsletter">
-                        <input type="checkbox"> Please subscribe me to the monthly newsletter </label>
+                    <label class="newsletter" for="subscribe">
+                        <input type="checkbox" id="subscribe"> Please subscribe me to the monthly newsletter
+                    </label>
                     <button type="submit" class="form-button">SEND MESSAGE</button>
                 </div>
             </form>
