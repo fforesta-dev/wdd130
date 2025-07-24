@@ -5,6 +5,9 @@
     --accent2-color: #5088f0;
     --heading-font: "Montserrat", sans-serif;
     --paragraph-font: "Source Sans 3", sans-serif;
+    --shadow-light: 0 2px 8px rgba(27, 53, 65, 0.1);
+    --shadow-medium: 0 2px 8px rgba(32, 83, 117, 0.7);
+    --shadow-strong: 0 4px 24px rgba(27, 73, 101, 0.18);
 }
 
 * {
@@ -59,7 +62,7 @@ nav {
 
 .nav-menu {
     display: flex;
-    box-shadow: 0 2px 8px rgba(27, 53, 65, 0.1);
+    box-shadow: var(--shadow-light);
     border-radius: 7px;
 }
 
@@ -69,7 +72,6 @@ nav {
     justify-content: center;
     background: #fff;
     color: var(--primary-color);
-    font-family: var(--heading-font);
     font-size: 1.2rem;
     font-weight: 500;
     padding: 1rem 2.5rem;
@@ -92,7 +94,10 @@ nav {
 }
 
 h1,
-h2 {
+h2,
+.nav-menu a,
+.hero-title,
+.employee-gallery figcaption {
     font-family: var(--heading-font);
 }
 
@@ -129,7 +134,6 @@ p {
     width: 100%;
     background: rgba(255, 255, 255, 0.7);
     color: var(--primary-color);
-    font-family: var(--heading-font);
     font-weight: 700;
     font-size: 2.3rem;
     text-align: center;
@@ -147,7 +151,7 @@ p {
     left: 3%;
     right: 3%;
     border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(27, 73, 101, 0.18);
+    box-shadow: var(--shadow-strong);
     color: var(--primary-color);
     padding: 24px 18px;
     z-index: 2;
@@ -190,7 +194,6 @@ p {
     align-items: center;
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(32, 83, 117, 0.7);
     padding: 2rem 1rem;
 }
 
@@ -240,12 +243,17 @@ p {
     padding-bottom: 1rem;
 }
 
+.employees,
+.adventure figure,
+.history {
+    box-shadow: var(--shadow-medium);
+}
+
 .adventure figure {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 7px;
-    box-shadow: 0 2px 8px rgba(32, 83, 117, 0.7);
     margin: 0;
     padding: 1em;
     width: 100%;
@@ -265,7 +273,7 @@ p {
 
 .adventure figcaption {
     text-align: center;
-    font-size: 0.96rem;
+    font-size: 1rem;
     color: var(--primary-color);
     font-family: var(--heading-font);
     font-weight: 500;
@@ -372,7 +380,6 @@ footer p {
 
 .employee-gallery figcaption {
     text-align: center;
-    font-family: var(--heading-font);
     color: var(--primary-color);
     line-height: 0.8;
     padding: 0;
@@ -388,7 +395,7 @@ footer p {
 
 .employee-gallery .role {
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #444;
     margin-top: 0.2rem;
     line-height: 1.2;
@@ -409,9 +416,7 @@ footer p {
 .contact-grid {
     display: flex;
     gap: 2rem;
-    display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 1.5rem;
@@ -497,7 +502,7 @@ footer p {
 .form-row {
     display: flex;
     gap: 1.5rem;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .form-group {
@@ -507,7 +512,7 @@ footer p {
 }
 
 .form-group label {
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 700;
     color: #3b4754;
     margin-bottom: 0.3rem;
@@ -516,7 +521,7 @@ footer p {
 .form-input {
     height: 28px;
     padding: 4px 8px;
-    font-size: 12px;
+    font-size: 16px;
     border: 2px solid #c9d3dd;
     border-radius: 4px;
     color: #3b4754;
@@ -530,7 +535,7 @@ footer p {
 .form-textarea {
     height: 99px;
     padding: 6px 8px;
-    font-size: 12px;
+    font-size: 16px;
     border: 2px solid #c9d3dd;
     border-radius: 4px;
     resize: vertical;
@@ -548,14 +553,14 @@ fieldset {
 }
 
 fieldset legend {
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 700;
     color: #3b4754;
     margin-bottom: 0.5rem;
 }
 
 fieldset label {
-    font-size: 11px;
+    font-size: 16px;
     color: #232323;
     display: flex;
     align-items: center;
@@ -564,14 +569,13 @@ fieldset label {
 
 .form-footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
 }
 
 .newsletter {
-    font-size: 11px;
+    font-size: 16px;
     color: #232323;
     display: flex;
     align-items: center;
@@ -584,7 +588,7 @@ fieldset label {
     padding: 5px 20px;
     border: 1px solid #29323d;
     border-radius: 2px;
-    font-size: 10px;
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
 }
