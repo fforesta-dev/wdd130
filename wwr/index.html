@@ -32,44 +32,88 @@
 
     <main>
         <section class="hero">
-            <img src="images/hero-rafting.webp" alt="Rafting adventure" class="hero-img" />
+            <img src="images/hero-rafting.webp" alt="Rafting adventure" class="hero-home-img" />
             <h1 class="hero-title">Have An Adventure!</h1>
-            <div class="abs-article" style="text-align:center">
+            <div class="abs-article-home">
                 <a href="trips.html" class="form-button">Book with Us</a>
             </div>
         </section>
 
-        <section class="adventure">
-            <h2>Our Activities</h2>
-            <figure>
-                <img src="images/swimming.webp" alt="Man on bamboo raft near jungle waterfall" />
-                <figcaption>Swimming</figcaption>
-            </figure>
-            <figure>
-                <img src="images/camping.webp" alt="Tents set up in a forest near a lake at sunrise" />
-                <figcaption>Camping</figcaption>
-            </figure>
-            <figure>
-                <img src="images/rapids.webp" alt="River rapids flowing through a forest at sunset" />
-                <figcaption>Rapids</figcaption>
-            </figure>
+        <section class="intro-text">
+            <h2>Experience White Water Adventure</h2>
+            <p>Explore unforgettable river adventures with Whisper River Rafting. From peaceful floats to roaring
+                rapids, we offer experiences for thrill-seekers, families, and everyone in between. Start your journey
+                today and create memories that will last a lifetime.</p>
         </section>
 
-        <section class="form-section">
-            <h2 class="form-title">Newsletter</h2>
-            <form class="contact-form">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" class="form-input" placeholder="Your name" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-input" placeholder="Your email address" required />
-                    </div>
+        <section class="home-activities">
+            <h2>Our Adventures</h2>
+            <div class="activities-grid">
+                <figure class="activity-card">
+                    <img src="images/swimming.webp" alt="Man on bamboo raft near jungle waterfall" />
+                    <figcaption>Swimming</figcaption>
+                </figure>
+                <figure class="activity-card">
+                    <img src="images/camping.webp" alt="Tents set up in a forest near a lake at sunrise" />
+                    <figcaption>Camping</figcaption>
+                </figure>
+                <figure class="activity-card">
+                    <img src="images/rapids.webp" alt="River rapids flowing through a forest at sunset" />
+                    <figcaption>Rapids</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="why-choose-wrapper">
+            <div class="why-choose-left">
+                <h2>Why Choose Whisper River Rafting?</h2>
+                <p>
+                    With over a decade of experience in guiding unforgettable adventures, Whisper River Rafting is your
+                    trusted partner for river thrills. Whether you're a beginner or a seasoned adventurer, our certified
+                    guides, top-notch equipment, and breathtaking locations guarantee the trip of a lifetime.
+                </p>
+            </div>
+            <div class="why-choose-right">
+                <div class="reason-box">
+                    <h3>Top-Rated Guides</h3>
+                    <p>Our team is experienced, certified, and passionate about rafting and safety.</p>
                 </div>
-                <button type="submit" class="form-button">SIGN UP</button>
-            </form>
+                <div class="reason-box">
+                    <h3>Stunning Locations</h3>
+                    <p>From serene floats to wild rapids, explore the most scenic rivers in the region.</p>
+                </div>
+                <div class="reason-box">
+                    <h3>Memorable Experiences</h3>
+                    <p>Families, groups, and solo travelers all leave with stories they’ll never forget.</p>
+                </div>
+                <div class="reason-box">
+                    <h3>All-Inclusive Packages</h3>
+                    <p>Enjoy meals, gear, and expert planning included—just show up and adventure!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-img-container">
+                    <img src="images/newsletter-bg.webp" alt="Group of rafters paddling in a canyon river">
+                </div>
+                <form class="newsletter-overlay" action="#" method="post">
+                    <h2>Join Our Newsletter</h2>
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-input" id="name" name="name" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-input" id="email" name="email"
+                                placeholder="Your email address">
+                        </div>
+                        <button type="submit" class="form-button">Sign Up</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
