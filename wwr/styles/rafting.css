@@ -640,7 +640,7 @@ fieldset label {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: var(--accent1-color);
+    color: #000;
     font-family: var(--heading-font)
 }
 
