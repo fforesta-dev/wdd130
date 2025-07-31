@@ -692,7 +692,8 @@ fieldset label {
 }
 
 .contact-page footer a:hover {
-    text-decoration: underline
+    text-decoration: underline;
+    color: #000
 }
 
 .intro-text {
@@ -905,7 +906,7 @@ fieldset label {
 
 .trip-table th {
     background-color: var(--secondary-color);
-    color: #fff;
+    color: #000;
     font-weight: 700;
     font-family: var(--heading-font);
 }
@@ -936,7 +937,7 @@ fieldset label {
 
 .cta-button {
     background-color: var(--accent1-color);
-    color: white;
+    color: #000;
     padding: 0.6rem 1.5rem;
     margin-left: 0.5rem;
     border-radius: 6px;
