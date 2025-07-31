@@ -686,12 +686,12 @@ fieldset label {
     background: #3b4754
 }
 
-.footer a {
+footer a {
     color: #000;
     font-weight: 500
 }
 
-.footer a:hover {
+footer a:hover {
     text-decoration: underline;
     color: #000
 }
