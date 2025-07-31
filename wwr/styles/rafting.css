@@ -686,12 +686,12 @@ fieldset label {
     background: #3b4754
 }
 
-.contact-page footer a {
+.footer a {
     color: #000;
     font-weight: 500
 }
 
-.contact-page footer a:hover {
+.footer a:hover {
     text-decoration: underline;
     color: #000
 }
